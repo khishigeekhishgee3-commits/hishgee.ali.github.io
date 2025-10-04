@@ -11,46 +11,51 @@
         margin: 0;
         padding: 20px;
     }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    .sidebar {
+        width: 30%;
+        padding: 20px;
+        border-right: 1px solid #ccc;
+    }
+    .main {
+        width: 70%;
+        padding: 20px;
+    }
     h1 {
         color: #007BFF;
         text-align: center;
         font-size: 36px;
         margin-bottom: 20px;
     }
-    table {
-        width: 80%;
-        margin: 0 auto;
-        border-collapse: collapse;
-        margin-top: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        background-color: #ffffff;
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    th, td {
-        border: 1px solid #ccc;
-        padding: 12px;
-        text-align: left;
-        vertical-align: middle;
-    }
-    th {
-        background-color: #E9F0FF;
+    h2 {
         color: #007BFF;
-        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
     }
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-    tr:hover {
-        background-color: #e2e2e2;
+    p, li {
+        font-size: 16px;
+        margin: 5px 0;
     }
     .blue-text {
         color: #007BFF;
         font-weight: bold;
     }
-    img.profile-pic {
-        width: 100px;
+    .profile-pic {
+        width: 100%;
         border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    ul {
+        padding-left: 20px;
     }
     .footer {
         text-align: center;
@@ -65,43 +70,43 @@
 
 <h1>[thefacebook]</h1>
 
-<table>
-    <tr>
-        <th>Category</th>
-        <th>Details</th>
-    </tr>
-    <!-- Sidebar Information -->
-    <tr>
-        <td class="blue-text">Picture</td>
-        <td><img src="profile_picture.jpg" alt="Profile Picture" class="profile-pic"></td>
-    </tr>
-    <tr><td>Edit My Profile</td><td>Option to edit profile</td></tr>
-    <tr><td>My Account Preferences</td><td>Manage account settings</td></tr>
-    <tr><td>My Privacy Preferences</td><td>Manage privacy settings</td></tr>
-    <tr>
-        <td class="blue-text">Connection</td>
-        <td>This is you</td>
-    </tr>
-    <tr>
-        <td class="blue-text">Access</td>
-        <td>Scott is currently logged in from a non-residential location</td>
-    </tr>
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="blue-text">Picture</h2>
+        <img src="profile_picture.jpg" alt="Profile Picture" class="profile-pic">
 
-    <!-- Main Content Information -->
-    <tr><td>Name</td><td>T. Khishgee</td></tr>
-    <tr><td>Member Since</td><td>January 12, 2005</td></tr>
-    <tr><td>Last Update</td><td>February 3, 2005</td></tr>
-    <tr><td>Email</td><td>Khishgeejargal29@gmail.com</td></tr>
-    <tr><td>Status</td><td>Alumnus</td></tr>
-    <tr><td>Sex</td><td>Male</td></tr>
-    <tr><td>Year</td><td>2001</td></tr>
-    <tr><td>Concentration</td><td>Computing Sciences, Mathematics</td></tr>
-    <tr><td>Phone</td><td>85641614</td></tr>
-    <tr><td>High School</td><td>NUM</td></tr>
-    <tr><td>Screenname</td><td>Scotte pp7</td></tr>
-    <tr><td>Looking For</td><td>Friendship, Dating, Relationship, Random Play</td></tr>
-    <tr><td>Interested In</td><td>Women</td></tr>
-</table>
+        <ul>
+            <li>Edit My Profile</li>
+            <li>My Account Preferences</li>
+            <li>My Privacy Preferences</li>
+        </ul>
+
+        <h2 class="blue-text">Connection</h2>
+        <p>This is you</p>
+
+        <h2 class="blue-text">Access</h2>
+        <p>Scott is currently logged in from a non-residential location</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h2>Account Info</h2>
+        <p><strong>Name:</strong> T. Khishgee</p>
+        <p><strong>Member Since:</strong> January 12, 2005</p>
+        <p><strong>Last Update:</strong> February 3, 2005</p>
+        <p><strong>Email:</strong> Khishgeejargal29@gmail.com</p>
+        <p><strong>Status:</strong> Alumnus</p>
+        <p><strong>Sex:</strong> Male</p>
+        <p><strong>Year:</strong> 2001</p>
+        <p><strong>Concentration:</strong> Computing Sciences, Mathematics</p>
+        <p><strong>Phone:</strong> 85641614</p>
+        <p><strong>High School:</strong> NUM</p>
+        <p><strong>Screenname:</strong> Scotte pp7</p>
+        <p><strong>Looking For:</strong> Friendship, Dating, Relationship, Random Play</p>
+        <p><strong>Interested In:</strong> Women</p>
+    </div>
+</div>
 
 <div class="footer">
     &copy; 2023 Scott Peterson's Profile
