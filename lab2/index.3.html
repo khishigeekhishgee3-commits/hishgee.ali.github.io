@@ -1,106 +1,98 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Facebook 2005 Style Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[thefacebook] Profile</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background-color: #e9ebee;
       font-family: Arial, sans-serif;
-      color: #333;
+      background-color: #e9ebee; /* цэнхэртэй цайвар */
+      margin: 0;
+      padding: 20px;
     }
     .container {
       width: 800px;
-      margin: 40px auto;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: auto;
+      background: #ffffff;
+      border: 1px solid #cccccc;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .header {
-      background-color: #3b5998;
+    header {
+      background: #3b5998; /* Facebook-ийн цэнхэр өнгө */
       color: white;
-      padding: 12px;
+      padding: 10px;
       text-align: center;
+      font-size: 24px;
     }
-    .profile-table {
-      width: 100%;
-      border-collapse: collapse;
+    .profile-section {
+      display: flex;
+      margin-top: 20px;
     }
-    .profile-table td {
-      vertical-align: top;
-      padding: 15px;
-      border-bottom: 1px solid #ddd;
+    .profile-pic {
+      flex: 0 0 140px;
+      margin-right: 20px;
     }
-    /* Зүүн талын зураг */
-    .sidebar {
-      width: 200px;
-      background-color: #f0f2f5;
-      border-right: 1px solid #ccc;
+    .profile-pic img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      display: block;
     }
-    .sidebar .profile-pic {
-      text-align: center;
-      margin-bottom: 15px;
+    .info {
+      flex: 1;
     }
-    .sidebar .profile-pic img {
-      width: 150px;
-      height: auto;
-      border: 2px solid #666;
+    .info h2 {
+      font-size: 20px;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 5px;
     }
-    /* Баруун талын мэдээлэл хэсэг */
-    .info-panel {
-      /* тулд content оронд info дэлгэц */
-      background-color: #ffffff;
-      padding-left: 20px;
+    .details {
+      margin: 10px 0;
     }
-    .info-panel h2 {
-      color: #3b5998;
-      margin-top: 0;
+    .details ul {
+      list-style-type: none;
+      padding: 0;
     }
-    .info-panel p {
-      margin: 8px 0;
+    .details li {
+      margin: 5px 0;
     }
     .footer {
-      background-color: #3b5998;
-      color: white;
+      font-size: 12px;
+      color: #888888;
       text-align: center;
-      padding: 10px;
-      font-size: 13px;
+      margin-top: 20px;
     }
-    a {
+    strong {
+      /* Нэр нь тодорхой харагдах */
       color: #3b5998;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <h1>Thefacebook</h1>
+    <header>
+      [thefacebook]
+    </header>
+    <div class="profile-section">
+      <div class="profile-pic">
+        <img src="profile-pic.jpg" alt="Profile Picture">
+      </div>
+      <div class="info">
+        <h2>Scott Peterson's Profile</h2>
+        <div class="details">
+          <strong>Account Info:</strong>
+          <ul>
+            <li>Username: scottp</li>
+            <li>Birthday: February 12, 2002</li>
+            <li>Hometown: San Francisco, CA</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <table class="profile-table">
-      <tr>
-        <td class="sidebar">
-          <div class="profile-pic">
-            <img src="images/profile.jpg" alt="Profile Picture">
-          </div>
-        </td>
-        <td class="info-panel">
-          <h2>Information</h2>
-          <p><strong>Name:</strong> John Doe</p>
-          <p><strong>School:</strong> Harvard University</p>
-          <p><strong>Location:</strong> Cambridge, MA</p>
-          <p><strong>Birthday:</strong> May 14, 1984</p>
-        </td>
-      </tr>
-    </table>
     <div class="footer">
-      &copy; 2005 Thefacebook, Inc.
+      © 2023 [thefacebook]
     </div>
   </div>
 </body>
