@@ -1,142 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scott Peterson's Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            display: flex;
-            max-width: 1000px;
-            margin: auto;
-            background: #ffffff;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        /* Sidebar */
-        .sidebar {
-            width: 250px;
-            background-color: #f5f5f5;
-            padding: 20px;
-            border-right: 1px solid #ccc;
-        }
-        .sidebar img {
-            width: 100%;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .sidebar li {
-            margin: 10px 0;
-            cursor: pointer;
-            padding: 5px;
-            border-radius: 5px;
-        }
-        .sidebar li:hover {
-            background-color: #e0e0e0;
-        }
-        .blue-text {
-            color: #007BFF;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        /* Main content */
-        .main {
-            flex: 1;
-            padding: 20px;
-        }
-        h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #E9F0FF;
-            color: #007BFF;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        tr:hover {
-            background-color: #e2e2e2;
-        }
-        .footer {
-            font-size: 12px;
-            color: #888888;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scott Peterson's Profile</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #ffffff;
+        overflow: hidden;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    /* Sidebar */
+    .sidebar {
+        width: 30%;
+        border-right: 1px solid #ccc;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+    .sidebar img {
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+    .blue-text {
+        color: #007BFF;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    ul li {
+        margin: 8px 0;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    ul li:hover {
+        background-color: #e0e0e0;
+    }
+    /* Main content */
+    .main {
+        width: 70%;
+        padding: 20px;
+    }
+    h1 {
+        color: #4267B2;
+        margin-bottom: 10px;
+    }
+    h2 {
+        color: #007BFF;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: #E9F0FF;
+        color: #007BFF;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    tr:hover {
+        background-color: #e2e2e2;
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <div class="blue-text">Picture</div>
-            <img src="profile-pic.jpg" alt="Profile Picture">
-            <ul>
-                <li>Edit My Profile</li>
-                <li>My Account Preferences</li>
-                <li>My Privacy Preferences</li>
-            </ul>
-            <div class="blue-text">Connection</div>
-            <div>This is you</div>
-            <div class="blue-text">Access</div>
-            <div>Scott is currently logged in from a non-residential location</div>
-        </div>
 
-        <!-- Main content -->
-        <div class="main">
-            <h2 class="blue-text">Information</h2>
-            <table>
-                <tr>
-                    <th>Field</th>
-                    <th>Details</th>
-                </tr>
-                <tr><td>Name</td><td>T. Khishgee</td></tr>
-                <tr><td>Username</td><td>scottp</td></tr>
-                <tr><td>Birthday</td><td>February 12, 2002</td></tr>
-                <tr><td>Hometown</td><td>San Francisco, CA</td></tr>
-                <tr><td>Member Since</td><td>January 12, 2005</td></tr>
-                <tr><td>Last Update</td><td>February 3, 2005</td></tr>
-                <tr><td>Email</td><td>Khishgeejargal29@gmail.com</td></tr>
-                <tr><td>Status</td><td>Alumnus</td></tr>
-                <tr><td>Sex</td><td>Male</td></tr>
-                <tr><td>Year</td><td>2001</td></tr>
-                <tr><td>Concentration</td><td>Computing Sciences, Mathematics</td></tr>
-                <tr><td>Phone</td><td>85641614</td></tr>
-                <tr><td>High School</td><td>NUM</td></tr>
-                <tr><td>Screenname</td><td>Scotte pp7</td></tr>
-                <tr><td>Looking For</td><td>Friendship, Dating, Relationship, Random Play</td></tr>
-                <tr><td>Interested In</td><td>Women</td></tr>
-            </table>
-        </div>
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="blue-text">Picture</div>
+        <img src="profile_picture.jpg" alt="Profile Picture">
+        
+        <ul>
+            <li>Edit My Profile</li>
+            <li>My Account Preferences</li>
+            <li>My Privacy Preferences</li>
+        </ul>
+
+        <div class="blue-text">Connection</div>
+        <div>This is you</div>
+
+        <div class="blue-text">Access</div>
+        <div>Scott is currently logged in from a non-residential location</div>
     </div>
 
-    <div class="footer">
-        © 2023 [thefacebook]
+    <!-- Main content -->
+    <div class="main">
+        <h1>Scott Peterson's Profile (This is you!)</h1>
+        <h2>Basic & Extended Info</h2>
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Details</th>
+            </tr>
+            <tr><td>Email</td><td>Khishgeejargal29@gmail.com</td></tr>
+            <tr><td>Status</td><td>Alumnus</td></tr>
+            <tr><td>Sex</td><td>Male</td></tr>
+            <tr><td>Year</td><td>2001</td></tr>
+            <tr><td>Concentration</td><td>Computing Sciences, Mathematics</td></tr>
+            <tr><td>Phone</td><td>85641614</td></tr>
+            <tr><td>High School</td><td>NUM</td></tr>
+            <tr><td>Screenname</td><td>Scotte pp7</td></tr>
+            <tr><td>Looking For</td><td>Friendship, Dating, Relationship, Random Play</td></tr>
+            <tr><td>Interested In</td><td>Women</td></tr>
+        </table>
     </div>
+</div>
+
 </body>
 </html>
-
-    
