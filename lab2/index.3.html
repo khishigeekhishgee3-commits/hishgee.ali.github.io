@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[thefacebook] Profile</title>
+    <title>Scott Peterson's Profile</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #E9E9E9;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 20px;
         }
@@ -15,18 +15,18 @@
             display: flex;
             max-width: 1000px;
             margin: auto;
-            background: #FFFFFF;
-            border: 1px solid #CCCCCC;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
             overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         /* Sidebar */
         .sidebar {
             width: 250px;
-            background-color: #F5F5F5;
+            background-color: #f5f5f5;
             padding: 20px;
-            border-right: 1px solid #CCCCCC;
+            border-right: 1px solid #ccc;
         }
         .sidebar img {
             width: 100%;
@@ -66,13 +66,19 @@
             margin-top: 10px;
         }
         th, td {
-            border: 1px solid #CCCCCC;
-            padding: 8px;
+            border: 1px solid #ccc;
+            padding: 10px;
             text-align: left;
         }
         th {
             background-color: #E9F0FF;
             color: #007BFF;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e2e2e2;
         }
         .footer {
             font-size: 12px;
@@ -101,78 +107,28 @@
 
         <!-- Main content -->
         <div class="main">
-            <h2><span class="blue-text">Information</span></h2>
-
-            <!-- Complete Information Table -->
+            <h2 class="blue-text">Information</h2>
             <table>
                 <tr>
                     <th>Field</th>
                     <th>Details</th>
                 </tr>
-                <tr>
-                    <td>Username</td>
-                    <td>scottp</td>
-                </tr>
-                <tr>
-                    <td>Birthday</td>
-                    <td>February 12, 2002</td>
-                </tr>
-                <tr>
-                    <td>Hometown</td>
-                    <td>San Francisco, CA</td>
-                </tr>
-                <tr>
-                    <td>Name</td>
-                    <td>T. Khishgee</td>
-                </tr>
-                <tr>
-                    <td>Member Since</td>
-                    <td>January 12, 2005</td>
-                </tr>
-                <tr>
-                    <td>Last Update</td>
-                    <td>February 3, 2005</td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>Khishgeejargal29@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>Status</td>
-                    <td>Alumnus</td>
-                </tr>
-                <tr>
-                    <td>Sex</td>
-                    <td>Male</td>
-                </tr>
-                <tr>
-                    <td>Year</td>
-                    <td>2001</td>
-                </tr>
-                <tr>
-                    <td>Concentration</td>
-                    <td>Computing Sciences, Mathematics</td>
-                </tr>
-                <tr>
-                    <td>Phone</td>
-                    <td>85641614</td>
-                </tr>
-                <tr>
-                    <td>High School</td>
-                    <td>NUM</td>
-                </tr>
-                <tr>
-                    <td>Screenname</td>
-                    <td>Scotte pp7</td>
-                </tr>
-                <tr>
-                    <td>Looking For</td>
-                    <td>Friendship, Dating, Relationship, Random Play</td>
-                </tr>
-                <tr>
-                    <td>Interested In</td>
-                    <td>Women</td>
-                </tr>
+                <tr><td>Name</td><td>T. Khishgee</td></tr>
+                <tr><td>Username</td><td>scottp</td></tr>
+                <tr><td>Birthday</td><td>February 12, 2002</td></tr>
+                <tr><td>Hometown</td><td>San Francisco, CA</td></tr>
+                <tr><td>Member Since</td><td>January 12, 2005</td></tr>
+                <tr><td>Last Update</td><td>February 3, 2005</td></tr>
+                <tr><td>Email</td><td>Khishgeejargal29@gmail.com</td></tr>
+                <tr><td>Status</td><td>Alumnus</td></tr>
+                <tr><td>Sex</td><td>Male</td></tr>
+                <tr><td>Year</td><td>2001</td></tr>
+                <tr><td>Concentration</td><td>Computing Sciences, Mathematics</td></tr>
+                <tr><td>Phone</td><td>85641614</td></tr>
+                <tr><td>High School</td><td>NUM</td></tr>
+                <tr><td>Screenname</td><td>Scotte pp7</td></tr>
+                <tr><td>Looking For</td><td>Friendship, Dating, Relationship, Random Play</td></tr>
+                <tr><td>Interested In</td><td>Women</td></tr>
             </table>
         </div>
     </div>
@@ -182,3 +138,5 @@
     </div>
 </body>
 </html>
+
+    
