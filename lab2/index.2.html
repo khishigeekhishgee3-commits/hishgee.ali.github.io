@@ -32,12 +32,12 @@
             height: 100%;
             object-fit: cover;
             display: none;
-            filter: grayscale(50%) sepia(20%); /* хоруулагдсан эффект */
+            filter: grayscale(50%) sepia(20%);
             transition: filter 0.5s ease;
         }
         .slides img.active {
             display: block;
-            filter: none; /* идэвхтэй зураг өнгөтэй */
+            filter: none;
         }
         .profile-info {
             padding: 20px;
@@ -79,9 +79,8 @@
 
 <div class="carousel-container">
     <div class="slides">
-        <!-- PDF-г хөрвүүлж хадгалсан зураг ашиглах -->
+        <!-- PDF-г хөрвүүлсэн зөв зураг -->
         <img src="lab2/images/eej.jpg" class="active" alt="Мөнжаргал">
-        <!-- Хэрвээ олон зураг байвал энд нэмнэ -->
         <div class="nav-buttons">
             <button id="prev">&#10094;</button>
             <button id="next">&#10095;</button>
