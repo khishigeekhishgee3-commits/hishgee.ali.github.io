@@ -11,137 +11,97 @@
         margin: 0;
         padding: 20px;
     }
-    .container {
-        width: 80%;
-        margin: 20px auto;
-        display: flex;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        background-color: #ffffff;
-        overflow: hidden;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .sidebar {
-        width: 30%;
-        border-right: 1px solid #ccc;
-        padding: 20px;
-        background-color: #f5f5f5;
-    }
-    .sidebar img {
-        width: 100%;
-        border-radius: 50%;
-        margin-bottom: 15px;
-    }
-    .blue-text {
-        color: #007BFF;
-        font-weight: bold;
-        margin-top: 20px;
-    }
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    ul li {
-        margin: 8px 0;
-        cursor: pointer;
-        padding: 5px;
-        border-radius: 5px;
-    }
-    ul li:hover {
-        background-color: #e0e0e0;
-    }
-    .main {
-        width: 70%;
-        padding: 20px;
-    }
-    .header {
-        background-color: #4267B2;
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-    }
     h1 {
-        margin: 0;
-    }
-    h2 {
         color: #007BFF;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
     }
     table {
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
         border-collapse: collapse;
         margin-top: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
     }
     th, td {
         border: 1px solid #ccc;
-        padding: 10px;
+        padding: 12px;
         text-align: left;
+        vertical-align: middle;
     }
     th {
         background-color: #E9F0FF;
         color: #007BFF;
+        font-size: 18px;
     }
     tr:nth-child(even) {
-        background-color: #f2f2f2;
+        background-color: #f9f9f9;
     }
     tr:hover {
         background-color: #e2e2e2;
+    }
+    .blue-text {
+        color: #007BFF;
+        font-weight: bold;
+    }
+    img.profile-pic {
+        width: 100px;
+        border-radius: 50%;
     }
     .footer {
         text-align: center;
         padding: 10px;
         font-size: 12px;
         color: #666;
+        margin-top: 20px;
     }
 </style>
 </head>
 <body>
 
-<div class="container">
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="blue-text">Picture</div>
-        <img src="profile_picture.jpg" alt="Profile Picture">
-        
-        <ul>
-            <li>Edit My Profile</li>
-            <li>My Account Preferences</li>
-            <li>My Privacy Preferences</li>
-        </ul>
+<h1>[thefacebook]</h1>
 
-        <div class="blue-text">Connection</div>
-        <div>This is you</div>
+<table>
+    <tr>
+        <th>Category</th>
+        <th>Details</th>
+    </tr>
+    <!-- Sidebar Information -->
+    <tr>
+        <td class="blue-text">Picture</td>
+        <td><img src="profile_picture.jpg" alt="Profile Picture" class="profile-pic"></td>
+    </tr>
+    <tr><td>Edit My Profile</td><td>Option to edit profile</td></tr>
+    <tr><td>My Account Preferences</td><td>Manage account settings</td></tr>
+    <tr><td>My Privacy Preferences</td><td>Manage privacy settings</td></tr>
+    <tr>
+        <td class="blue-text">Connection</td>
+        <td>This is you</td>
+    </tr>
+    <tr>
+        <td class="blue-text">Access</td>
+        <td>Scott is currently logged in from a non-residential location</td>
+    </tr>
 
-        <div class="blue-text">Access</div>
-        <div>Scott is currently logged in from a non-residential location</div>
-    </div>
-
-    <!-- Main content -->
-    <div class="main">
-        <div class="header">
-            <h1>Scott Peterson's Profile</h1>
-        </div>
-
-        <h2>Basic & Extended Info</h2>
-        <table>
-            <tr>
-                <th>Field</th>
-                <th>Details</th>
-            </tr>
-            <tr><td>Email</td><td>Khishgeejargal29@gmail.com</td></tr>
-            <tr><td>Status</td><td>Alumnus</td></tr>
-            <tr><td>Sex</td><td>Male</td></tr>
-            <tr><td>Year</td><td>2001</td></tr>
-            <tr><td>Concentration</td><td>Computing Sciences, Mathematics</td></tr>
-            <tr><td>Phone</td><td>85641614</td></tr>
-            <tr><td>High School</td><td>NUM</td></tr>
-            <tr><td>Screenname</td><td>Scotte pp7</td></tr>
-            <tr><td>Looking For</td><td>Friendship, Dating, Relationship, Random Play</td></tr>
-            <tr><td>Interested In</td><td>Women</td></tr>
-        </table>
-    </div>
-</div>
+    <!-- Main Content Information -->
+    <tr><td>Name</td><td>T. Khishgee</td></tr>
+    <tr><td>Member Since</td><td>January 12, 2005</td></tr>
+    <tr><td>Last Update</td><td>February 3, 2005</td></tr>
+    <tr><td>Email</td><td>Khishgeejargal29@gmail.com</td></tr>
+    <tr><td>Status</td><td>Alumnus</td></tr>
+    <tr><td>Sex</td><td>Male</td></tr>
+    <tr><td>Year</td><td>2001</td></tr>
+    <tr><td>Concentration</td><td>Computing Sciences, Mathematics</td></tr>
+    <tr><td>Phone</td><td>85641614</td></tr>
+    <tr><td>High School</td><td>NUM</td></tr>
+    <tr><td>Screenname</td><td>Scotte pp7</td></tr>
+    <tr><td>Looking For</td><td>Friendship, Dating, Relationship, Random Play</td></tr>
+    <tr><td>Interested In</td><td>Women</td></tr>
+</table>
 
 <div class="footer">
     &copy; 2023 Scott Peterson's Profile
