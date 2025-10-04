@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thefacebook 2005 – Profile</title>
+  <title>Facebook 2005 Style Profile</title>
   <style>
     body {
       margin: 0;
@@ -21,47 +21,53 @@
     }
     .header {
       background-color: #3b5998;
-      color: #fff;
-      padding: 10px;
+      color: white;
+      padding: 12px;
       text-align: center;
     }
-    .main-table {
+    .profile-table {
       width: 100%;
       border-collapse: collapse;
     }
-    .main-table td {
+    .profile-table td {
       vertical-align: top;
-      border-bottom: 1px solid #ddd;
       padding: 15px;
+      border-bottom: 1px solid #ddd;
     }
+    /* Зүүн талын зураг */
     .sidebar {
       width: 200px;
-      border-right: 1px solid #ddd;
       background-color: #f0f2f5;
+      border-right: 1px solid #ccc;
     }
-    .profile-pic {
+    .sidebar .profile-pic {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
-    .profile-pic img {
+    .sidebar .profile-pic img {
       width: 150px;
       height: auto;
       border: 2px solid #666;
     }
-    .info {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-    .info strong {
-      display: inline-block;
-      width: 90px;
-    }
-    .content {
+    /* Баруун талын мэдээлэл хэсэг */
+    .info-panel {
+      /* тулд content оронд info дэлгэц */
+      background-color: #ffffff;
       padding-left: 20px;
     }
-    h2 {
+    .info-panel h2 {
       color: #3b5998;
       margin-top: 0;
+    }
+    .info-panel p {
+      margin: 8px 0;
+    }
+    .footer {
+      background-color: #3b5998;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 13px;
     }
     a {
       color: #3b5998;
@@ -70,13 +76,6 @@
     a:hover {
       text-decoration: underline;
     }
-    .footer {
-      background-color: #3b5998;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      font-size: 13px;
-    }
   </style>
 </head>
 <body>
@@ -84,24 +83,19 @@
     <div class="header">
       <h1>Thefacebook</h1>
     </div>
-    <table class="main-table">
+    <table class="profile-table">
       <tr>
         <td class="sidebar">
           <div class="profile-pic">
-            <img src="images/profile.jpg" alt="Profile Picture" />
-          </div>
-          <div class="info">
-            <p><strong>Name:</strong> John Doe</p>
-            <p><strong>School:</strong> Harvard University</p>
-            <p><strong>Location:</strong> Cambridge, MA</p>
-            <p><strong>Birthday:</strong> May 14, 1984</p>
+            <img src="images/profile.jpg" alt="Profile Picture">
           </div>
         </td>
-        <td class="content">
-          <h2>About Me</h2>
-          <p>Welcome to my profile. Here you can see my details, friends, posts, and more.</p>
-          <h3>Friends</h3>
-          <p>List of friends and thumbnails go here.</p>
+        <td class="info-panel">
+          <h2>Information</h2>
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>School:</strong> Harvard University</p>
+          <p><strong>Location:</strong> Cambridge, MA</p>
+          <p><strong>Birthday:</strong> May 14, 1984</p>
         </td>
       </tr>
     </table>
