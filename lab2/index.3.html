@@ -46,7 +46,7 @@
         .sidebar li:hover {
             background-color: #e0e0e0;
         }
-        .sidebar .blue-text {
+        .blue-text {
             color: #007BFF;
             font-weight: bold;
             margin-top: 20px;
@@ -60,19 +60,19 @@
             font-size: 22px;
             margin-bottom: 10px;
         }
-        .section-title {
-            color: #007BFF; /* цэнхэр өнгө */
-            font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 18px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        th, td {
+            border: 1px solid #CCCCCC;
+            padding: 8px;
+            text-align: left;
         }
-        li {
-            margin: 4px 0;
+        th {
+            background-color: #E9F0FF;
+            color: #007BFF;
         }
         .footer {
             font-size: 12px;
@@ -86,6 +86,7 @@
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
+            <div class="blue-text">Picture</div>
             <img src="profile-pic.jpg" alt="Profile Picture">
             <ul>
                 <li>Edit My Profile</li>
@@ -100,41 +101,67 @@
 
         <!-- Main content -->
         <div class="main">
-            <h2>Scott Peterson's Profile</h2>
+            <h2><span class="blue-text">Information</span></h2>
 
-            <!-- Information Section -->
-            <div class="section">
-                <div class="section-title">Information</div>
-                <ul>
-                    <li>Name: T. Khishgee</li>
-                    <li>Member Since: January 12, 2005</li>
-                    <li>Last Update: February 3, 2005</li>
-                </ul>
-            </div>
-
-            <!-- Basic Info Section -->
-            <div class="section">
-                <div class="section-title">Basic Info</div>
-                <ul>
-                    <li>Email: Khishgeejargal29@gmail.com</li>
-                    <li>Status: Alumnus</li>
-                    <li>Sex: Male</li>
-                    <li>Year: 2001</li>
-                    <li>Concentration: Computing Sciences, Mathematics</li>
-                    <li>Phone: 85641614</li>
-                    <li>High School: NUM</li>
-                </ul>
-            </div>
-
-            <!-- Extended Info Section -->
-            <div class="section">
-                <div class="section-title">Extended Info</div>
-                <ul>
-                    <li>Screenname: Scotte pp7</li>
-                    <li>Looking For: Friendship, Dating, Relationship, Random Play</li>
-                    <li>Interested In: Women</li>
-                </ul>
-            </div>
+            <!-- Complete Information Table -->
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>T. Khishgee</td>
+                </tr>
+                <tr>
+                    <td>Member Since</td>
+                    <td>January 12, 2005</td>
+                </tr>
+                <tr>
+                    <td>Last Update</td>
+                    <td>February 3, 2005</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>Khishgeejargal29@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>Alumnus</td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Year</td>
+                    <td>2001</td>
+                </tr>
+                <tr>
+                    <td>Concentration</td>
+                    <td>Computing Sciences, Mathematics</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>85641614</td>
+                </tr>
+                <tr>
+                    <td>High School</td>
+                    <td>NUM</td>
+                </tr>
+                <tr>
+                    <td>Screenname</td>
+                    <td>Scotte pp7</td>
+                </tr>
+                <tr>
+                    <td>Looking For</td>
+                    <td>Friendship, Dating, Relationship, Random Play</td>
+                </tr>
+                <tr>
+                    <td>Interested In</td>
+                    <td>Women</td>
+                </tr>
+            </table>
         </div>
     </div>
 
