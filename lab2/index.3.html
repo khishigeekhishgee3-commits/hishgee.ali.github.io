@@ -3,23 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Old Facebook Profile Mockup</title>
+  <title>Thefacebook 2005 – Profile</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #e9ebee;
       margin: 0;
       padding: 0;
+      background-color: #e9ebee;
+      font-family: Arial, sans-serif;
+      color: #333;
     }
     .container {
       width: 800px;
       margin: 40px auto;
-      background-color: white;
+      background-color: #fff;
       border: 1px solid #ccc;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .header {
-      background-color: #3b5998; /* Facebook цэнхэр өнгө */
-      color: white;
+      background-color: #3b5998;
+      color: #fff;
       padding: 10px;
       text-align: center;
     }
@@ -29,8 +31,8 @@
     }
     .main-table td {
       vertical-align: top;
-      border: 1px solid #ddd;
-      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      padding: 15px;
     }
     .sidebar {
       width: 200px;
@@ -58,7 +60,8 @@
       padding-left: 20px;
     }
     h2 {
-      color: #3b5998; /* цэнхэр гарчиг */
+      color: #3b5998;
+      margin-top: 0;
     }
     a {
       color: #3b5998;
@@ -66,6 +69,13 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+    .footer {
+      background-color: #3b5998;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 13px;
     }
   </style>
 </head>
@@ -78,23 +88,26 @@
       <tr>
         <td class="sidebar">
           <div class="profile-pic">
-            <img src="images/profile_picture.jpg" alt="Profile Picture" />
+            <img src="images/profile.jpg" alt="Profile Picture" />
           </div>
           <div class="info">
             <p><strong>Name:</strong> John Doe</p>
-            <p><strong>Age:</strong> 25</p>
-            <p><strong>School:</strong> Harvard</p>
+            <p><strong>School:</strong> Harvard University</p>
             <p><strong>Location:</strong> Cambridge, MA</p>
+            <p><strong>Birthday:</strong> May 14, 1984</p>
           </div>
         </td>
         <td class="content">
           <h2>About Me</h2>
-          <p>Welcome to my profile. Here I share things about myself, connect with friends, and more.</p>
+          <p>Welcome to my profile. Here you can see my details, friends, posts, and more.</p>
           <h3>Friends</h3>
-          <p>Friend list or thumbnails here...</p>
+          <p>List of friends and thumbnails go here.</p>
         </td>
       </tr>
     </table>
+    <div class="footer">
+      &copy; 2005 Thefacebook, Inc.
+    </div>
   </div>
 </body>
 </html>
